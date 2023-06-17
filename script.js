@@ -6,7 +6,7 @@ row.classList.add("row");
 let column = document.createElement("div");
 column.classList.add("column");
 
-let gridSize = 12;
+let gridSize = 30;
 let btn = document.querySelector("button");
 
 btn.addEventListener("click", () => { //button changes grid size.
