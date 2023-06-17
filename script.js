@@ -1,3 +1,7 @@
+document.body.onmousedown = (e) => {
+    e.preventDefault();
+  };
+
 let gridContainer = document.querySelector('.grid-container');
 
 let row = document.createElement("div");
@@ -41,7 +45,7 @@ function initiateDrawing() {
     let isDrawing = false;
 
     const square = document.querySelectorAll('.column');
-    
+
     square.forEach((square) => {
         square.addEventListener('mousedown', () => {
             isDrawing = true;
